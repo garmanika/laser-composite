@@ -1,0 +1,55 @@
+@media (max-width: 1199px) {
+    .teaser-img img, .teaser-img svg{
+        width: 203px;
+        height: 200px;
+    }
+    .teeaser-title{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .teeaser-title{
+        margin-bottom: 8px;
+    }
+    .teaser-inner{
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 991px) {
+    .teaser-inner{
+        min-height: 956px;
+    }
+}
+
+@media (max-width: 767px) {
+    .teaser-img img, .teaser-img svg{
+        width: 102px;
+        height: 100px;
+    }
+    .teeaser-title{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .teaser-img{
+        margin-bottom: 15px;
+    }
+    .teeaser-title{
+        margin-bottom: 2px;
+    }
+    .teaser-inner{
+        min-height: 272px;
+    }
+}
+
+@media (max-width: 575px) {
+    .teeaser-title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .teaser-inner{
+        min-height: 432px;
+    }
+}
+
+@media (min-width: 1200px) {
+}
