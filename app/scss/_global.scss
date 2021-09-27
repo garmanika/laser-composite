@@ -37,14 +37,12 @@ a {
 }
 
 .title {
-
   font-weight: 600;
   font-size: 40px;
   line-height: 54px;
   text-align: center;
   text-transform: uppercase;
-  color:  #8DBE22;;
-
+  color: #8dbe22;
 }
 
 .wrapper-page {
@@ -61,11 +59,11 @@ a {
   textarea {
     outline: none;
   }
-	textarea{
-		&::placeholder{
-			opacity: 1;
-		}
-	}
+  textarea {
+    &::placeholder {
+      opacity: 1;
+    }
+  }
   a {
     text-decoration: none;
     //color: #333;
@@ -106,34 +104,42 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .btn {
   @include no-button;
-  padding: 12px 0;
-  background: #fe000c;
-  box-shadow: 0px 5px 5px rgba(254, 0, 12, 0.15);
-  border-radius: 5px;
+  max-width: 216px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-align: center;
-  &:hover {
-    box-shadow: 0px 5px 10px rgba(254, 0, 12, 0.5);
+  color: #333333;
+  background: #FFFFFF;
+border-radius: 333px; 
+padding: 12px 0;
+text-align: center;
+&:hover{
+  background: #FFFFFF;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+border-radius: 333px;
+}
+&.mod{
+&:hover{
+  background: #8DBE22;
+  color: #FFFFFF;
+box-shadow: 0px 5px 10px rgba(141, 190, 34, 0.5);
+border-radius: 333px;
+svg{
+  path{
+    fill: #fff;
   }
 }
-.btn-wh {
-	@include no-button;
-  background: #ffffff;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-	padding: 12px 0;
-  &:hover {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+}
+  img,
+  svg {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
   }
 }

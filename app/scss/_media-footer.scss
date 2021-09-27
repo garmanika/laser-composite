@@ -1,0 +1,29 @@
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .footer-inner{
+        align-items: start;
+    }
+.footer-box{
+    flex-direction: column;
+    gap: 4px;
+    max-width: none;
+}
+}
+
+@media (max-width: 575px) {
+    .footer-inner{
+        flex-direction: column;
+        gap: 4px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+}
