@@ -1,3 +1,13 @@
+$(window).on("scroll", function() {
+	var height = $(document).scrollTop().valueOf();
+	/*Если сделали скролл на 50px задаём новый класс для header*/
+	if (height >= 1) {
+			$("header").addClass("sticky");
+	} else {
+			/*Если меньше 50px удаляем класс для header*/
+			$("header").removeClass("sticky");
+	}
+});
 $(function () {
   $(".menu-btn").on("click", function() {
 		$(".header-bottom").fadeToggle();
@@ -6,16 +16,7 @@ $(function () {
 		$("body").toggleClass("noscroll");
 });
 
-$(window).on("scroll", function() {
-		var height = $(document).scrollTop().valueOf();
-		/*Если сделали скролл на 50px задаём новый класс для header*/
-		if (height >= 50) {
-				$("header").addClass("sticky");
-		} else {
-				/*Если меньше 50px удаляем класс для header*/
-				$("header").removeClass("sticky");
-		}
-});
+
 $(".masked-phone").inputmask({
 	mask: "+7 (999) 999-99-99",
 	clearIncomplete: true,
@@ -25,4 +26,60 @@ $('.tan').on('click', function() {
 	$('.tan').toggleClass('open-menu');
 
 });
+const breakpoint = window.matchMedia('(min-width: 575px)');
+
+// keep track of swiper instances to destroy later
+let mySwiper;
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+const breakpointChecker = function() {
+
+		// if larger viewport and multi-row layout needed
+		if (breakpoint.matches === true) {
+
+				// clean up old instances and inline styles when available
+				if (mySwiper !== undefined) mySwiper.destroy(true, true);
+
+				// or/and do nothing
+				return;
+
+				// else if a small viewport and single column layout needed
+		} else if (breakpoint.matches === false) {
+
+				// fire small viewport version of swiper
+				return enableSwiper();
+		}
+};
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+const enableSwiper = function() {
+		mySwiper = new Swiper(".tenet-items", {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				pagination: {
+						el: ".tenet-items-pagination",
+						clickable: true,
+				},
+		});
+
+
+};
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+// keep an eye on viewport size changes
+breakpoint.addListener(breakpointChecker);
+
+// kickstart
+breakpointChecker();
+
+//
 });

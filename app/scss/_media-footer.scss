@@ -13,6 +13,7 @@
     flex-direction: column;
     gap: 4px;
     max-width: none;
+		align-items: start;
 }
 }
 
@@ -20,8 +21,7 @@
     .footer-inner{
         flex-direction: column;
         gap: 4px;
-        padding-left: 30px;
-        padding-right: 30px;
+
     }
 }
 
