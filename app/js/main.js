@@ -1,7 +1,7 @@
 $(window).on("scroll", function() {
 	var height = $(document).scrollTop().valueOf();
 	/*Если сделали скролл на 50px задаём новый класс для header*/
-	if (height >= 1) {
+	if (height >= 81) {
 			$("header").addClass("sticky");
 	} else {
 			/*Если меньше 50px удаляем класс для header*/

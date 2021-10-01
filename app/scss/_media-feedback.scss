@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 767px) {
+    .feedback-box{
+        gap: 16px;
+    }
     .feedback{
         background-image: url(../img/footer-bg-560.jpg);
     }
@@ -22,7 +25,6 @@
     }
     .feedback-img{
         margin: 0;
-        margin-bottom: 16px;
     }
     .feedback{
         padding: 40px 0;
@@ -30,8 +32,10 @@
     .feedback-info{
         max-width: 354px;
         margin: 0 auto;
-        margin-bottom: 25px;
         text-align: center;
+    }
+    .feedback-inner{
+        gap: 25px;
     }
 }
 

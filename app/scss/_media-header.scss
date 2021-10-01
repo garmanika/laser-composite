@@ -4,6 +4,22 @@
 //   }
 // }
 @media (max-width: 1199px) {
+  .header-top{
+    .tan{
+      margin-left: 50px;
+    }
+  }
+
+  body.noscroll{
+    overflow: hidden;
+  }
+  .header-wrapper.open-menu {
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .header.sticky .menu-link{
+    min-height: auto;
+  }
   .header.sticky .header-bottom-inner{
     display: block;
   }
@@ -21,11 +37,7 @@
         display: none;
       }
     }
-		.header-top{
-			.tan{
-				display: none;
-			}
-		}
+
 		.header-top-box{
 			align-items: center;
 		}
@@ -251,6 +263,9 @@
   }
   .header-top-locat-country span {
     margin-right: 15px;
+  }
+  .header-top-mail{
+    margin: 0 40px;
   }
 }
 

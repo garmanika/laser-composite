@@ -11,13 +11,13 @@
         margin-bottom: 8px;
     }
     .teaser-inner{
-        min-height: 700px;
+        min-height: 768px;
     }
 }
 
 @media (max-width: 991px) {
     .teaser-inner{
-        min-height: 956px;
+        min-height: 1024px;
     }
 }
 
@@ -37,7 +37,7 @@
         margin-bottom: 2px;
     }
     .teaser-inner{
-        min-height: 272px;
+        min-height: 320px;
     }
 }
 
@@ -47,7 +47,7 @@
         line-height: 32px;
     }
     .teaser-inner{
-        min-height: 432px;
+        min-height: 480px;
     }
 }
 

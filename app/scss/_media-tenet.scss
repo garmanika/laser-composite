@@ -1,13 +1,15 @@
 @media (max-width: 1199px) {
-	.tenet-item + .tenet-item,
-	.tenet-items .swiper-slide:nth-child(n+3){
-		margin-top: 40px;
+	.tenet-items .swiper-wrapper{
+		gap: 40px;
+	}
+	.tenet-item{
+		gap: 25px;
 	}
 	.tenet-items{
 		margin-top: 40px;
 	}
 	.tenet-item-content{
-		padding-left: 20px;
+		padding-left: 23px;
 	}
 	.tenet{
 		padding: 66px 0 78px;
@@ -24,6 +26,12 @@
 }
 
 @media (max-width: 767px) {
+	.tenet-items .swiper-wrapper{
+		gap: 24px;
+	}
+	.tenet-items .swiper-slide{
+		grid-template-columns: 1fr;
+	}
 	.tenet-items{
 		margin-top: 15px;
 	}
@@ -37,21 +45,24 @@
 	.tenet-items .swiper-slide:nth-child(n+3){
 		margin: 0;
 	}
-	.tenet-items .swiper-slide + .swiper-slide{
-		margin-top: 24px;
-	}
-	.tenet-item + .tenet-item{
-		margin-top: 24px;
-	}
+
+
 	.tenet-items .swiper-slide.mod{
 		display: block;
 	}
-	.tenet-items .swiper-slide.mod .tenet-item + .tenet-item{
-		margin-top: 24px;
+
+	.tenet-item-content{
+		max-width: none;
+	}
+	.tenet-items .swiper-slide{
+		gap: 24px;
 	}
 }
 
 @media (max-width: 575px) {
+	.tenet-items .swiper-wrapper{
+		gap: 0;
+	}
 	.tenet-items .swiper-wrapper{
 		flex-wrap: nowrap;
 	}
