@@ -634,6 +634,11 @@ ul.header-bottom-locat-wrapper a {
   .header-top .tan {
     margin-left: 50px
   }
+  ul.menu-list {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
   body.noscroll {
     overflow: hidden
   }
@@ -718,7 +723,7 @@ ul.header-bottom-locat-wrapper a {
     display: block;
     width: 32px;
     margin-bottom: 5px;
-    background: #333;
+    background: #848488;
     height: 2px;
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -745,7 +750,7 @@ ul.header-bottom-locat-wrapper a {
     overflow-y: auto;
     display: none;
     position: fixed;
-    top: 84px;
+    top: 64px;
     left: 0;
     right: 0;
     width: 100%;
@@ -765,6 +770,10 @@ ul.header-bottom-locat-wrapper a {
     color: #fff
   }
   .header.sticky .header-wrapper .menu-list li a {
+    margin: 0
+  }
+  .header.sticky .header-wrapper .menu-list li a span {
+    display: block;
     max-width: 960px;
     margin: 0 auto;
     width: 100%;
@@ -822,7 +831,7 @@ ul.header-bottom-locat-wrapper a {
   }
   .header.sticky .header-wrapper .header-top {
     border-bottom: none;
-    padding: 12px 0
+    padding: 2px 0
   }
   .header.sticky .menu-btn {
     display: block;
@@ -852,9 +861,6 @@ ul.header-bottom-locat-wrapper a {
   }
   .header.sticky ul.menu-list li + li {
     margin: 0
-  }
-  .header-top {
-    border: none
   }
   .header-top-locat-country span {
     margin-right: 15px
@@ -891,7 +897,7 @@ ul.header-bottom-locat-wrapper a {
     height: auto
   }
   .header.sticky .header-wrapper .header-bottom-locat,
-  .header.sticky .header-wrapper .menu-list li a {
+  .header.sticky .header-wrapper .menu-list li a span {
     max-width: 720px
   }
   ul.menu-list {
@@ -945,7 +951,7 @@ ul.header-bottom-locat-wrapper a {
     overflow-y: auto;
     display: none;
     position: fixed;
-    top: 84px;
+    top: 64px;
     left: 0;
     right: 0;
     width: 100%;
@@ -965,6 +971,10 @@ ul.header-bottom-locat-wrapper a {
     color: #fff
   }
   .menu-list li a {
+    margin: 0
+  }
+  .menu-list li a span {
+    display: block;
     max-width: 720px;
     margin: 0 auto;
     width: 100%;
@@ -973,6 +983,10 @@ ul.header-bottom-locat-wrapper a {
   .menu-link {
     display: block;
     margin-bottom: 30px
+  }
+  .header-top {
+    border-bottom: none;
+    padding: 8px 0
   }
   .noscroll {
     overflow: hidden
@@ -1026,10 +1040,6 @@ ul.header-bottom-locat-wrapper a {
   .header-bottom-city span:hover {
     color: #224d93;
     border-bottom: 1px dashed #224d93
-  }
-  .header-top {
-    border-bottom: none;
-    padding: 18px 0
   }
 }
 @media (max-width:767px) {
@@ -1088,7 +1098,7 @@ ul.header-bottom-locat-wrapper a {
   .header-bottom {
     top: 48px
   }
-  .menu-list li a {
+  .menu-list li a span {
     max-width: 540px
   }
   .header-top .header-top-ico.ico-bar {
@@ -1096,11 +1106,11 @@ ul.header-bottom-locat-wrapper a {
   }
   .header-bottom-locat,
   .header.sticky .header-wrapper .header-bottom-locat,
-  .header.sticky .header-wrapper .menu-list li a {
+  .header.sticky .header-wrapper .menu-list li a span {
     max-width: 540px
   }
   .header.sticky .header-top {
-    padding: 6px 0
+    padding: 4px 0
   }
   .header.sticky .header-wrapper .header-bottom {
     top: 48px
@@ -1108,11 +1118,9 @@ ul.header-bottom-locat-wrapper a {
   .header.sticky .header-wrapper .header-bottom-wrapper {
     bottom: 0
   }
-  .header-inner {
-    padding: 2px 0
-  }
+  .header-inner,
   .header-top {
-    padding: 6px 0
+    padding: 2px 0
   }
 }
 @media (min-width:1200px) {
@@ -1228,7 +1236,7 @@ ul.header-bottom-locat-wrapper a {
     margin-bottom: 2px
   }
   .teaser-inner {
-    min-height: 320px
+    min-height: 100vh
   }
 }
 @media (max-width:575px) {
@@ -1242,23 +1250,20 @@ ul.header-bottom-locat-wrapper a {
     padding: 0 15px
   }
   .header.sticky .header-wrapper .header-bottom-locat,
-  .header.sticky .header-wrapper .menu-list li a {
+  .header.sticky .header-wrapper .menu-list li a span {
     max-width: 100%;
     padding-left: 15px
   }
   .header-top .header-top-phone-number {
     display: none
   }
-  .menu-list li a {
+  .menu-list li a span {
     max-width: 100%;
     padding-left: 15px
   }
   .teeaser-title {
     font-size: 24px;
     line-height: 32px
-  }
-  .teaser-inner {
-    min-height: 480px
   }
 }
 .feedback {
@@ -1278,7 +1283,7 @@ ul.header-bottom-locat-wrapper a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 10px
+  gap: 110px
 }
 .feedback-box {
   display: -webkit-box;
@@ -1314,6 +1319,9 @@ ul.header-bottom-locat-wrapper a {
 @media (max-width:991px) {
   .feedback-info {
     font-size: 16px
+  }
+  .feedback-inner {
+    gap: 50px
   }
 }
 @media (max-width:767px) {
@@ -1561,7 +1569,8 @@ ul.header-bottom-locat-wrapper a {
   height: 0;
   padding-bottom: 147%
 }
-.projects-item-img img {
+.projects-item-img img,
+.projects-item-img picture {
   position: absolute;
   top: 0;
   left: 0;
@@ -1596,9 +1605,9 @@ ul.header-bottom-locat-wrapper a {
   padding: 16px 25px;
   width: calc(100% - 60px);
   max-height: calc(100% - 30px);
-  -webkit-transition: padding .5s linear .8s;
-  -o-transition: padding .5s linear .8s;
-  transition: padding .5s linear .8s
+  -webkit-transition: padding .5s ease-in-out .7s;
+  -o-transition: padding .5s ease-in-out .7s;
+  transition: padding .5s ease-in-out .7s
 }
 .projects-item-info-img {
   height: 1px;
@@ -1644,7 +1653,8 @@ ul.header-bottom-locat-wrapper a {
   height: auto;
   overflow: visible
 }
-.projects-item:hover .projects-item-img img {
+.projects-item:hover .projects-item-img img,
+.projects-item:hover .projects-item-img picture {
   -webkit-filter: grayscale(0) blur(0);
   filter: grayscale(0) blur(0)
 }

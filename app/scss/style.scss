@@ -546,7 +546,7 @@ ul.header-bottom-locat-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 110px;
 }
 .feedback-box {
   display: flex;
@@ -667,7 +667,8 @@ ul.header-bottom-locat-wrapper {
 .projects-item-img {
   @include container-img;
   padding-bottom: 147%;
-  img {
+  img,
+  picture {
     @include img;
     filter: grayscale(90%) blur(0.15px);
     transition: all 0.3s linear;
@@ -693,7 +694,7 @@ ul.header-bottom-locat-wrapper {
   padding: 16px 25px;
   width: calc(100% - 60px);
   max-height: calc(100% - 30px);
-  transition: padding .5s .8s linear;
+  transition: padding .5s .7s ease-in-out;
 }
 .projects-item-info-img {
   height: 1px;
@@ -738,7 +739,8 @@ ul.header-bottom-locat-wrapper {
     height: auto;
     overflow: visible;
   }
-  .projects-item-img img {
+  .projects-item-img img,
+  .projects-item-img picture {
     filter: grayscale(0%) blur(0px);
   }
   .projects-item-info {
