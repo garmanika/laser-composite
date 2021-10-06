@@ -13,15 +13,30 @@
     .teaser-inner{
         min-height: 768px;
     }
+    .teaser-img-anim{
+        width: 95px;
+        height: 95px;
+    }
+    .teaser-img,
+    .teaser-img::after{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media (max-width: 991px) {
     .teaser-inner{
         min-height: 1024px;
     }
+    .teaser-inner{
+        padding-bottom: 64px;
+    }
 }
 
 @media (max-width: 767px) {
+    .teaser-inner{
+        padding-bottom: 48px;
+    }
     .teaser-img img, .teaser-img svg{
         width: 102px;
         height: 100px;
@@ -38,6 +53,15 @@
     }
     .teaser-inner{
         min-height: 100vh;
+    }
+    .teaser-img-anim{
+        width: 48px;
+        height: 48px;
+    }
+    .teaser-img,
+    .teaser-img::after{
+        width: 100px;
+        height: 100px;
     }
 }
 

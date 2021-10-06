@@ -45,14 +45,28 @@
                           <span class="menu-btn-medium"></span>
                           <span class="menu-btn-bottom"></span>
                         </div>
-                        <a href="#" class="header-logo"></a>
+                        
+                        <a href="#" class="header-logo">
+                          <picture>
+                            <source media="(max-width:767px )" srcset="img/svg/logo-min.svg">
+                            <source srcset="img/svg/logo.svg">
+                            <img src="img/svg/logo.svg">
+                          </picture>
+                        </a>
+
+                      </div>
+                      <div class="header-mid-box">
+                        <a href="mailto:pochta@mail.ru" class="header-top-mail">
+                          <img src="img/svg/envelope.svg" alt="" />
+                          <span>pochta@mail.ru</span>
+                        </a>
                       </div>
 
                       <div class="header-top-box">
                         <a href="mailto:pochta@mail.ru" class="header-top-mail">
                           <img src="img/svg/envelope.svg" alt="" />
                           <span>pochta@mail.ru</span>
-                        </a>
+                        </a> 
                         <a href="tel:+74842907670" class="header-top-phone">
                           <svg
                             width="24"
@@ -119,7 +133,13 @@
                     </div>
                     <div class="header-bottom">
                       <div class="header-bottom-inner">
-                        <a href="#" class="header-logo"></a>
+                        <a href="#" class="header-logo">
+                          <picture>
+                            <source media="(max-width:767px )" srcset="img/svg/logo-min.svg">
+                            <source srcset="img/svg/logo-sticky.svg">
+                            <img src="img/svg/logo-sticky.svg">
+                          </picture>
+                        </a>
                         <nav class="header-bottom-memu menu">
                           <ul class="menu-list">
                             <li>
@@ -256,8 +276,8 @@
                               >+7 000 000-00-00
                             </span></a
                           ><a data-fancybox
-													data-src="#modal-done"
-													href="javascript:;" class="header-top-btn">
+                          data-src="#modal-call"
+                          href="javascript:;" class="header-top-btn">
                             Заказать звонок
                           </a>
                         </div>
@@ -272,7 +292,9 @@
             <div class="container">
               <div class="teaser-inner">
                 <div class="teaser-img">
-                  <img src="img/svg/logo-b.svg" alt="" />
+                  <div class="teaser-img-anim"></div>
+                  
+                  <!-- <img src="img/svg/logo-b.svg" alt="" /> -->
                 </div>
                 <div class="teeaser-title">
                   Гнем <span>вашу</span> линию
@@ -512,7 +534,7 @@
               <a
                 class="btn"
                 data-fancybox
-                data-src="#modal-feedback"
+                data-src="#modal-call"
                 href="javascript:;"
               >
                 <img src="img/svg/phone-call.svg" alt="" />
@@ -540,7 +562,11 @@
                   <span>pochta@mail.ru</span>
                 </a>
               </div>
-              <button class="btn mod">
+              <a class="btn mod"
+              data-fancybox
+              data-src="#modal-feedback"
+              href="javascript:;"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -557,7 +583,7 @@
                 </svg>
 
                 Напишите нам
-              </button>
+              </a>
             </div>
           </div>
         </div>
