@@ -6,28 +6,28 @@
 }
 
 @media (max-width: 767px) {
-    .footer-inner{
-        align-items: start;
-    }
-    .footer-inner{
-        flex-wrap: wrap;
-    }
+	.footer-inner{
+		align-items: start;
+	}
+	.footer-inner{
+		flex-wrap: wrap;
+	}
 }
 
 @media (max-width: 575px) {
-    .footer-inner{
-        flex-direction: column;
-        gap: 4px;
-    
-    }
-    .footer-item.mod{
-        order: 0;
-      }
+	.footer-inner{
+		flex-direction: column;
+		gap: 4px;
+	
+	}
+	.footer-item.mod{
+		order: 0;
+	  }
 
 }
 
 @media (min-width: 768px) {
-    .footer-item.mod{
-        order: 1
-      }
+	.footer-item.mod{
+		order: 1
+	  }
 }

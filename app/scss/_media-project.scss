@@ -1,0 +1,36 @@
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+	.projects-inner {
+		padding-bottom: 64px;
+	}
+	.projects-inner .projects-items {
+		margin: 42px 0;
+	}
+	.breadcrumbs.mod {
+		.breadcrumbs-inner {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.breadcrumbs.mod {
+		.breadcrumbs-inner {
+			margin-bottom: 25px;
+		}
+	}
+	.projects-inner .projects-items {
+		margin: 34px 0;
+	}
+	.projects-inner {
+		padding-bottom: 54px;
+	}
+}
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 1200px) {
+}

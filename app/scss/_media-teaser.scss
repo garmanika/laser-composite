@@ -1,78 +1,78 @@
 @media (max-width: 1199px) {
-    .teaser-img img, .teaser-img svg{
-        width: 203px;
-        height: 200px;
-    }
-    .teeaser-title{
-        font-size: 48px;
-        line-height: 60px;
-    }
-    .teeaser-title{
-        margin-bottom: 8px;
-    }
-    .teaser-inner{
-        min-height: 768px;
-    }
-    .teaser-img-anim{
-        width: 95px;
-        height: 95px;
-    }
-    .teaser-img,
-    .teaser-img::after{
-        width: 200px;
-        height: 200px;
-    }
+	.teaser-img img, .teaser-img svg{
+		width: 203px;
+		height: 200px;
+	}
+	.teeaser-title{
+		font-size: 48px;
+		line-height: 60px;
+	}
+	.teeaser-title{
+		margin-bottom: 8px;
+	}
+	.teaser-inner{
+		min-height: 768px;
+	}
+	.teaser-img-anim{
+		width: 95px;
+		height: 95px;
+	}
+	.teaser-img,
+	.teaser-img::after{
+		width: 200px;
+		height: 200px;
+	}
 }
 
 @media (max-width: 991px) {
-    .teaser-inner{
-        min-height: 1024px;
-    }
-    .teaser-inner{
-        padding-bottom: 64px;
-    }
+	.teaser-inner{
+		min-height: 1024px;
+	}
+	.teaser-inner{
+		padding-bottom: 64px;
+	}
 }
 
 @media (max-width: 767px) {
-    .teaser-inner{
-        padding-bottom: 48px;
-    }
-    .teaser-img img, .teaser-img svg{
-        width: 102px;
-        height: 100px;
-    }
-    .teeaser-title{
-        font-size: 30px;
-        line-height: 38px;
-    }
-    .teaser-img{
-        margin-bottom: 15px;
-    }
-    .teeaser-title{
-        margin-bottom: 2px;
-    }
-    .teaser-inner{
-        min-height: 100vh;
-    }
-    .teaser-img-anim{
-        width: 48px;
-        height: 48px;
-    }
-    .teaser-img,
-    .teaser-img::after{
-        width: 100px;
-        height: 100px;
-    }
+	.teaser-inner{
+		padding-bottom: 48px;
+	}
+	.teaser-img img, .teaser-img svg{
+		width: 102px;
+		height: 100px;
+	}
+	.teeaser-title{
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.teaser-img{
+		margin-bottom: 15px;
+	}
+	.teeaser-title{
+		margin-bottom: 2px;
+	}
+	.teaser-inner{
+		min-height: 100vh;
+	}
+	.teaser-img-anim{
+		width: 48px;
+		height: 48px;
+	}
+	.teaser-img,
+	.teaser-img::after{
+		width: 100px;
+		height: 100px;
+	}
 }
 
 @media (max-width: 575px) {
-    .teeaser-title{
-        font-size: 24px;
-        line-height: 32px;
-    }
-    .teaser-inner{
-        //min-height: 480px;
-    }
+	.teeaser-title{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.teaser-inner{
+		//min-height: 480px;
+	}
 }
 
 @media (min-width: 1200px) {

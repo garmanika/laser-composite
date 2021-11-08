@@ -1,0 +1,36 @@
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+	.news-item-info{
+		padding: 24px 0;
+	}
+	.news-items{
+		gap: 24px 30px;
+	}
+	.btn-back{
+		margin-top: 44px;
+	}
+}
+
+@media (max-width: 767px) {
+	.btn-back{
+		margin-top: 33px;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	.news-items{
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+	.news-one-date{
+		margin-bottom: 16px;
+	}
+}
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 1200px) {
+}

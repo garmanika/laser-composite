@@ -1,0 +1,30 @@
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+.clientele-items{
+	grid-template-columns: repeat(2, 1fr);
+	margin: 15px 0 40px;
+	gap: 15px;
+}
+.clientele-item{
+	padding: 48px 15px 22px;
+}
+}
+
+
+@media (max-width: 767px) {
+	.clientele-items{
+		grid-template-columns: 1fr;
+		margin: 42px 0 50px;
+	}
+	.clientele-item{
+		padding: 30px 15px 25px;
+	}
+}
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 1200px) {
+}

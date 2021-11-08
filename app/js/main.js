@@ -71,6 +71,7 @@ const enableSwiper = function() {
 
 };
 
+
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
@@ -82,4 +83,35 @@ breakpoint.addListener(breakpointChecker);
 breakpointChecker();
 
 //
+$(".up").click(function(event) {
+	event.preventDefault();
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+	return false;
+});
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 500) {
+		$(".up").fadeIn();
+	} else {
+		$(".up").fadeOut();
+	}
+});
+const swiper = new Swiper('.product-one-slider', {
+	// Optional parameters
+	slidesPerView: 1,
+	spaceBetween: 30,
+	// If we need pagination
+	pagination: {
+	  el: '.product-one-slider > .swiper-pagination',
+	  clickable: true,
+	},
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.product-one-slider-wrapper > .swiper-button-next',
+	  prevEl: '.product-one-slider-wrapper > .swiper-button-prev',
+	},
+  
+	// And if we need scrollbar
+
+  });
 });

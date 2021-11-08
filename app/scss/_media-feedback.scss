@@ -1,51 +1,51 @@
 @media (max-width: 1199px) {
-    .feedback-info{
-        line-height: 24px;
-    }
+	.feedback-info{
+		line-height: 24px;
+	}
 }
 
 @media (max-width: 991px) {
-    .feedback-info{
-        font-size: 16px;
-    }
-    .feedback-inner{
-        gap: 50px;
-    }
+	.feedback-info{
+		font-size: 16px;
+	}
+	.feedback-inner{
+		gap: 50px;
+	}
 }
 
 @media (max-width: 767px) {
-    .feedback-box{
-        gap: 16px;
-    }
-    .feedback{
-        background-image: url(../img/footer-bg-560.jpg);
-    }
-    .feedback-inner,
-    .feedback-box{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .feedback-img{
-        margin: 0;
-    }
-    .feedback{
-        padding: 40px 0;
-    }
-    .feedback-info{
-        max-width: 354px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .feedback-inner{
-        gap: 25px;
-    }
+	.feedback-box{
+		gap: 16px;
+	}
+	.feedback{
+		background-image: url(../img/footer-bg-560.jpg);
+	}
+	.feedback-inner,
+	.feedback-box{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.feedback-img{
+		margin: 0;
+	}
+	.feedback{
+		padding: 40px 0;
+	}
+	.feedback-info{
+		max-width: 354px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.feedback-inner{
+		gap: 25px;
+	}
 }
 
 @media (max-width: 575px) {
-    .btn{
-        max-width: none;
-    }
+	.btn{
+		max-width: none;
+	}
 }
 
 @media (min-width: 1200px) {
