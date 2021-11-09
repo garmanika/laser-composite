@@ -276,13 +276,13 @@
 					<div class="breadcrumbs-inner">
 						<ul class="breadcrumbs-list">
 							<li class="breadcrumbs-list-item">
-								<a href="#">Главная</a>
+								<a href="#">Главная <span>/</span></a>
 							</li>
 							<li class="breadcrumbs-list-item">
-								<a href="#">Наши проекты</a>
+								<a href="#">Наши проекты <span>/</span></a>
 							</li>
 							<li class="breadcrumbs-list-item">
-								<a href="#">Композиционные основания для мебельных производств</a>
+								<a href="#">Композиционные основания для мебельных производств <span>/</span></a>
 							</li>  
 							<li class="breadcrumbs-list-item active">
 								<span> Название товара
@@ -295,26 +295,26 @@
 				</div>
 			</section>
 			<div class="container">
-				<div class="page-inner projects-inner">
-					<div class="row product-one-detail-inner">
+				<div class="page-inner">
+					<div class="row catalog-detail-more-inner">
 						<div class="col-12 col-xl-6">
-							<div class="product-one-slider-wrapper">
-								<div class="swiper product-one-slider">
+							<div class="catalog-detail-slider-wrapper">
+								<div class="swiper catalog-detail-slider">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
-											<div class="product-one-slider-img">
+											<a href="img/project-cart-img.jpg" data-fancybox="images" data-caption="My caption"  class="catalog-detail-slider-img">
 												<img src="img/project-cart-img.jpg" alt="">
-											</div>
+											</a>
 										</div>
 										<div class="swiper-slide">
-											<div class="product-one-slider-img">
+											<a href="img/project-cart-img.jpg" data-fancybox="images" data-caption="My caption" class="catalog-detail-slider-img">
 												<img src="img/project-cart-img.jpg" alt="">
-											</div>
+											</a>
 										</div>
 										<div class="swiper-slide">
-											<div class="product-one-slider-img">
+											<a href="img/project-cart-img.jpg" data-fancybox="images" data-caption="My caption" class="catalog-detail-slider-img">
 												<img src="img/project-cart-img.jpg" alt="">
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="swiper-pagination "></div>
@@ -333,34 +333,36 @@
 							</div>
 						</div>
 						<div class="col-12 col-xl-5">
-							<div class="product-one-detail">
-								<div class="product-one-detail-title">Характеристики </div>
-								<div class="product-one-detail-box">
-									<div class="product-one-detail-info">Ширина</div>
-									<div class="product-one-detail-info">100 см</div>
+							<div class="catalog-detail-more">
+								<div class="catalog-detail-more-title">Характеристики </div>
+								<div class="catalog-detail-more-box">
+									<div class="catalog-detail-more-info">Ширина</div>
+									<div class="catalog-detail-more-info">100 см</div>
 								</div>
-								<div class="product-one-detail-box">
-									<div class="product-one-detail-info">Глубина</div>
-									<div class="product-one-detail-info">60 см</div>
+								<div class="catalog-detail-more-box">
+									<div class="catalog-detail-more-info">Глубина</div>
+									<div class="catalog-detail-more-info">60 см</div>
 								</div>
-								<div class="product-one-detail-box">
-									<div class="product-one-detail-info">Высота</div>
-									<div class="product-one-detail-info">120 см</div>
+								<div class="catalog-detail-more-box">
+									<div class="catalog-detail-more-info">Высота</div>
+									<div class="catalog-detail-more-info">120 см</div>
 								</div>
-								<div class="product-one-detail-box">
-									<div class="product-one-detail-info">Толщина</div>
-									<div class="product-one-detail-info">2 см</div>
+								<div class="catalog-detail-more-box">
+									<div class="catalog-detail-more-info">Толщина</div>
+									<div class="catalog-detail-more-info">2 см</div>
 								</div>
-								<div class="product-one-detail-box">
-									<div class="product-one-detail-info">Материал</div>
-									<div class="product-one-detail-info">Дерево дуб</div>
+								<div class="catalog-detail-more-box">
+									<div class="catalog-detail-more-info">Материал</div>
+									<div class="catalog-detail-more-info">Дерево дуб</div>
 								</div>
-								<a class="header-top-btn"  href="#">Заказать</a>
+								<a class="header-top-btn" data-fancybox
+								data-src="#modal-order"
+								href="javascript:;">Заказать</a>
 							</div>
 						</div>
 					</div>
 					<div class="text-page">
-						<div class="product-one-desc-title">Описание</div>
+						<div class="catalog-detail-desc-title">Описание</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
 						</p>
 					</div>
@@ -512,6 +514,39 @@
 						<input type="checkbox" class="check-box" required="" />
 						<span class="check-style"></span>
 						Нажимая на кнопку «Отправить», я принимаю политику обработки
+						персональных данных
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="modal-order" style="display: none" class="modal modal-order">
+		<div class="modal-feedback-inner">
+			<div class="modal-feedback-img">
+				<img src="img/svg/telephone.svg" alt="" />
+			</div>
+			<div class="modal-feedback-title">
+				Название товара
+			</div>
+			<form>
+				<div class="modal-form-item">
+					<input type="text" placeholder="Имя" />
+				</div>
+				<div class="modal-form-item">
+					<input type="tel" placeholder="Телефон" class="masked-phone" />
+				</div>
+				<div class="modal-form-item">
+					<textarea placeholder="Комментарий к заказу"></textarea>
+				</div>
+				<button class="modal-form-item modal-btn">
+					<img src="img/svg/envelope-w.svg" alt="" />
+					Заказать
+				</button>
+				<div class="modal-checkbox">
+					<label>
+						<input type="checkbox" class="check-box" checked required="" />
+						<span class="check-style"></span>
+						Нажимая на кнопку «Заказать», я принимаю политику обработки
 						персональных данных
 					</label>
 				</div>

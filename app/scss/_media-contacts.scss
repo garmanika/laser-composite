@@ -1,4 +1,12 @@
 @media (max-width: 1199px) {
+	.contacts-page-box{
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+	.contacts-page-form{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 @media (max-width: 991px) {

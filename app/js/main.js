@@ -95,23 +95,26 @@ $(window).scroll(function() {
 		$(".up").fadeOut();
 	}
 });
-const swiper = new Swiper('.product-one-slider', {
+const swiper = new Swiper('.catalog-detail-slider', {
 	// Optional parameters
 	slidesPerView: 1,
 	spaceBetween: 30,
 	// If we need pagination
 	pagination: {
-	  el: '.product-one-slider > .swiper-pagination',
+	  el: '.catalog-detail-slider > .swiper-pagination',
 	  clickable: true,
 	},
   
 	// Navigation arrows
 	navigation: {
-	  nextEl: '.product-one-slider-wrapper > .swiper-button-next',
-	  prevEl: '.product-one-slider-wrapper > .swiper-button-prev',
+	  nextEl: '.catalog-detail-slider-wrapper > .swiper-button-next',
+	  prevEl: '.catalog-detail-slider-wrapper > .swiper-button-prev',
 	},
   
 	// And if we need scrollbar
 
   });
+	$("[data-fancybox=images]").fancybox({
+		backFocus: false,
+});
 });

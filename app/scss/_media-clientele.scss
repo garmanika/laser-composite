@@ -4,7 +4,7 @@
 @media (max-width: 991px) {
 .clientele-items{
 	grid-template-columns: repeat(2, 1fr);
-	margin: 15px 0 40px;
+	margin: 40px 0;
 	gap: 15px;
 }
 .clientele-item{
@@ -16,7 +16,7 @@
 @media (max-width: 767px) {
 	.clientele-items{
 		grid-template-columns: 1fr;
-		margin: 42px 0 50px;
+		margin: 15px 0 40px;
 	}
 	.clientele-item{
 		padding: 30px 15px 25px;

@@ -2,6 +2,7 @@
 }
 
 @media (max-width: 991px) {
+
 	.text-page p + p {
 		margin-top: 22px;
 	}
@@ -16,13 +17,7 @@
 	.page-inner.text-page-inner {
 		padding-bottom: 70px;
 	}
-	.text-page .img-left,
-	.text-page .img-right {
-		float: none;
-		display: block;
-		max-width: 100%;
-		margin: 20px 0 16px;
-	}
+
 	.text-page h2 {
 		margin: 38px 0 16px;
 	}
@@ -42,9 +37,30 @@
 	.breadcrumbs-inner.mod{
 		margin-bottom: 40px;
 	}
+	.text-page blockquote{
+		padding-right: 40px;
+	}
+	.text-page .img-left,
+	.text-page .img-right{
+		max-width: calc(50% - 15px)
+	}
+	.text-page .img-left{
+		margin: 0px 29px 20px 0;
+	}
+	.text-page .img-right{
+		margin: 21px 0 21px 29px;
+	}
 }
 
 @media (max-width: 767px) {
+	.text-page .img-left,
+	.text-page .img-right {
+		float: none;
+		display: block;
+		max-width: 100%;
+		margin: 20px 0 16px;
+	}
+
 	.responsive-table{
 		margin-top: 34px;
 	}
@@ -84,6 +100,9 @@
 	}
 	.breadcrumbs-inner.mod{
 		margin-bottom: 30px;
+	}
+	.text-page blockquote{
+		padding-right: 26px;
 	}
 }
 
